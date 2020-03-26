@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="shortcut icon" href="http://uii.edu.mx/images/1440-favicon.ico?crc=3951665158" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="theme-color" content="#063B91">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <title>Solicita tu Ficha | Instituto Irapuato</title>
+  </head>
+  <style>
+    option{
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-lg ">
+              </div>
+              <div class="col-lg-6 col-sm-12 pb-5">
+                <a href="http://www.uii.edu.mx"><img class="img-fluid mx-auto d-block" src="http://uii.edu.mx/assets/images/logo2.png" alt="Logo del Instituto Irapuato"></a>
+                <h1 class="text-center p-5"  data-aos-delay="8000" data-aos-duration="2000" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="0">¡Bienvenido!</h1>
+                <h2 class="text-center pb-4" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">Estás a un paso de ser parte de la comunidad del Instituto Irapuato</h2>
+                <div class="form-group" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="3000" data-aos-offset="0">
+                    <label for="exampleFormControlSelect1">¿Qué deseas estudiar?:</label>
+                    <select class="form-control" id="unidad">
+                      <option value="" selected disabled>Seleccionar</option>
+                      <option value="1">Universidad Escolarizada</option>
+                      <option value="2">Universidad Mixta (sabatina y nocturna)</option>
+                      <option value="3">Maestría</option>
+                      <option value="4">Preparatoria</option>
+                    </select>
+                  </div>
+                <div id="contenedor1"></div>
+                <div id="lhc_form_embed_container"></div>
+              </div>
+              <div class="col-sm-1 col-lg ">
+              </div>
+        </div>
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const formulario1 = document.querySelector('#contenedor1')
+        unidad.onchange=function(){
+        if (unidad.value == 1) {
+            (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = '//radio.uii.edu.mx/chat2/lhc_web/index.php/esp/form/embed/14';
+        var s = formulario1; s.parentNode.insertBefore(po, s);
+        })();
+        }
+        if (unidad.value == 2) {
+            (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = '//radio.uii.edu.mx/chat2/lhc_web/index.php/esp/form/embed/15';
+        var s = formulario1; s.parentNode.insertBefore(po, s);
+        })();
+        }
+        if (unidad.value == 3) {
+            (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = '//radio.uii.edu.mx/chat2/lhc_web/index.php/esp/form/embed/16';
+        var s = formulario1; s.parentNode.insertBefore(po, s);
+        })();
+        }
+        if (unidad.value == 4) {
+            (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = '//radio.uii.edu.mx/chat2/lhc_web/index.php/esp/form/embed/12';
+        var s = formulario1; s.parentNode.insertBefore(po, s);
+        })();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+var unidad = document.querySelectorAll('select');
+})
+        
+
+      }
+    </script>
+    <script type="text/javascript">  
+        var LHCFormOptions = {};
+    </script>
+</body>
+</html>
